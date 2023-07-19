@@ -5,22 +5,22 @@
 }
 
 :root {
-  --text-color: white;
+  --text-color: #E9E9E9;
   --bg-url: url(./assets/bg-mobile.jpg);
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.05);
-  --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(255, 255, 255, 0.2);
+  --stroke-color: rgba(233, 233, 233, 0.5);
+  --surface-color: rgba(233, 233, 233, 0.05);
+  --surface-color-hover: rgba(14, 15, 17, 0.02);
+  --highlight-color: rgba(233, 255, 233, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
-  --text-color: black;
+  --text-color: #0E0F11;
   --bg-url: url(./assets/bg-mobile-light.jpg);
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.05);
-  --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.1);
+  --stroke-color: rgba(14, 15, 17, 0.5);
+  --surface-color: rgba(14, 15, 17, 0.05);
+  --surface-color-hover: rgba(14, 15, 17, 0.02);
+  --highlight-color: rgba(14, 15, 17, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 body * {
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   color: var(--text-color);
 }
 
@@ -62,7 +62,6 @@ body * {
 #switch {
   position: relative;
   width: 64px;
-
   margin: 4px auto;
 }
 
@@ -72,23 +71,17 @@ body * {
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
-
   position: absolute;
   top: 50%;
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-
   animation: slide-back 0.2s;
 }
 
-.light #switch button {
-  animation: slide-in 0.2s forwards;
-}
+.light #switch button { animation: slide-in 0.2s forwards; }
 
-#switch button:hover {
-  outline: 8px solid var(--highlight-color);
-}
+#switch button:hover { outline: 8px solid var(--highlight-color); }
 
 #switch span {
   display: block;
@@ -104,11 +97,9 @@ body * {
 /* links */
 ul {
   list-style: none;
-
   display: flex;
   flex-direction: column;
   gap: 16px;
-
   padding: 24px 0;
 }
 
@@ -116,19 +107,14 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 16px 24px;
-
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
-
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-
   text-decoration: none;
   font-weight: 500;
-
   transition: background 0.2s;
 }
 
@@ -142,9 +128,7 @@ ul li a:hover {
 #social-links {
   display: flex;
   justify-content: center;
-
   padding: 24px 0;
-
   font-size: 24px;
 }
 
@@ -153,41 +137,28 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 16px;
-
   transition: background 0.2s;
   border-radius: 50%;
 }
 
-#social-links a:hover {
-  background: var(--highlight-color);
-}
+#social-links a:hover { background: var(--highlight-color); }
 
 /* media queries */
 @media (min-width: 700px) {
-  :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
-  }
+  :root { --bg-url: url(./assets/bg-desktop.jpg);  }
 
-  .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
-  }
+  .light { --bg-url: url(./assets/bg-desktop-light.jpg);  }
 }
 
 /* animation */
 @keyframes slide-in {
-  from {
-    left: 0;
-  }
-  to {
-    left: 50%;
-  }
+  from { left: 0; }
+
+  to { left: 50%; }
 }
 
 @keyframes slide-back {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 0;
-  }
+  from { left: 50%; }
+
+  to { left: 0; }
 }

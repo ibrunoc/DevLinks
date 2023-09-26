@@ -8,11 +8,6 @@ DevLinks ( Rocketseat - Discover )
 Um projeto feito no curso Discover da Rocketseat
 </h3>
     
-<p align="center">
-  <a href="#Tecnologias">Tecnologias usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Resultado">Resultado do projeto</a>
-</p>
-
 ## Tecnologias
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
@@ -21,8 +16,9 @@ Um projeto feito no curso Discover da Rocketseat
 - [Git](https://git-scm.com/docs)
 - [VS Code](https://code.visualstudio.com/).
 
-
-## Resultado
+<div align="center">
+  <h2><a href="https://dev-links-omega.vercel.app/">LINK DO PROJETO</a></h2>
+</div>
 
 <div align="center">
   <img src="assets/readme-Img.png">
